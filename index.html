@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành nhúng CSS vào trang web</title>
+
+    <!-- PHẦN 3: External CSS (Nhúng file CSS ngoài) -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- PHẦN 2: Internal CSS (CSS nội bộ bên trong thẻ <style>) -->
+    <style>
+        .internal-title {
+            color: #16a34a; /* Màu xanh lá cây */
+        }
+
+        .internal-desc {
+            color: #0d9488; /* Màu xanh mòng két */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- PHẦN 1: Inline Style (Viết trực tiếp vào thuộc tính style của thẻ) -->
+    <section>
+        <h1 style="color: #dc2626;">Phần 1: Tiêu đề dùng Inline Style (Màu đỏ)</h1>
+        <p style="color: #ea580c;">Đây là đoạn văn được định kiểu màu sắc trực tiếp bằng thuộc tính style ngay trên thẻ HTML.</p>
+    </section>
+
+    <hr>
+
+    <!-- PHẦN 2: Internal Style -->
+    <section>
+        <h1 class="internal-title">Phần 2: Tiêu đề dùng Internal Style (Màu xanh lá)</h1>
+        <p class="internal-desc">Đây là đoạn văn được định kiểu bằng cách khai báo trong thẻ style ở phần head của trang web.</p>
+    </section>
+
+    <hr>
+
+    <!-- PHẦN 3: External Style -->
+    <section>
+        <h1 class="external-title">Phần 3: Tiêu đề dùng External Style (Màu xanh dương)</h1>
+        <p class="external-desc">Đây là đoạn văn được định kiểu thông qua việc liên kết với tệp style.css bên ngoài.</p>
+    </section>
+
+</body>
+</html>
